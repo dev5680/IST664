@@ -1,0 +1,20 @@
+a)	lemmatization (featuresets_without_preprocessing, featuresets_with_preprocessing, SL_features, NOT_features, bigram_features, POS_features)
+b)	withoutlemmatization (featuresets_without_preprocessing, featuresets_with_preprocessing, SL_features, NOT_features, bigram_features, POS_features)
+
+
+NB featuresets_without_preprocessing without lemmatization (92.5%) does better job than with lammatization (88.88%).
+NB-CV5 featuresets_without_preprocessing with lammatization (94.07%) does better job over without lemmatization (92.96)
+NB featuresets_with_preprocessing with lemmatization (96.29%) does better job than without lemmatization (66.66%)
+NB-CV5 featuresets_with_preprocessing with lemmatization (93.3%) does better job than without lemmatization (91.85)
+NB SL_features with lammatization (92.59%) does better job than without lemmatization (62.96%)
+NB-CV5 SL_features without lemmatization (91.85%) does better job than with lammatization (91.44%).
+NB NOT_features with lammatization (1%) does better job than without lemmatization (92.59%)
+NB-CV5 NOT_features without lemmatization (95.92%) does better job than with lammatization (94.44%).
+NB bigram_features with lammatization (1%) does better job than without lemmatization (70.7%)
+NB-CV5 bigram_features with lemmatization (94.07%) does better job than without lemmatization (92.96)
+NB POS_features(without_preprocessing) with lammatization with lemmatization (96.29%) does better job than without lemmatization (66.66%)
+NB-CV5 POS_features with lammatization with lemmatization (91.48%) does better job than without lemmatization (90.37%)
+
+Observation:
+
+Applying pre-processing and stopwords improved accuracy in all classifier. This is because pre processing and stopwords filter removed unnecessary words from classifier. We can see that after applying pre-processing and stopwords unigram features and bigram features give good accuracy.
